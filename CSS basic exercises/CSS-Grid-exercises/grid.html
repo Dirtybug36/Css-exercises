@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>Grid-exercises</title>
+  </head>
+  <style>
+    .one {
+      display: grid;
+      grid-template-columns: 200px 75px; /*yesle chae duita column xa vanera xuttyauxa ani euta che 200 ra arko 75 vanera*/
+      margin-bottom: 100px;
+    }
+    .two {
+      display: grid;
+      grid-template-columns: 50px 1fr 75px; /*1fr ko kaam chae baaki raheko space sabai use garr vanna khojeko ho*/
+      margin-bottom: 100px;
+    }
+    .three {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 10px;
+    }
+  </style>
+  <body>
+    <div class="one">
+      <div style="background-color: aquamarine">200px</div>
+      <div style="background-color: pink">75px</div>
+    </div>
+
+    <div class="two">
+      <div style="background-color: aquamarine">col1</div>
+      <div style="background-color: pink">col2</div>
+      <div style="background-color: aquamarine">col3</div>
+    </div>
+    <div class="three">
+      <div style="background-color: pink">col1</div>
+      <div style="background-color: pink">col2</div>
+      <div style="background-color: pink">col3</div>
+      <div style="background-color: pink">col4</div>
+      <div style="background-color: pink">col5</div>
+      <div style="background-color: pink">col6</div>
+      <div style="background-color: pink">col7</div>
+      <div style="background-color: pink">col8</div>
+    </div>
+  </body>
+</html>

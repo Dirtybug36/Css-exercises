@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>fixed exercises 4</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0px;
+    }
+    body {
+      height: 3000px;
+    }
+    .header {
+      display: flex;
+      position: fixed;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgb(237, 236, 236);
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      border-bottom: 1px solid rgb(233, 229, 229);
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    .left-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .bimarsha {
+      height: 50px;
+      width: 50px;
+      border-radius: 35px;
+      object-fit: cover;
+      margin-top: 7px;
+      margin-left: 20px;
+      margin-right: 10px;
+    }
+    p {
+      color: rgb(254, 249, 249);
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    .right-item {
+      display: flex;
+    }
+    button {
+      background-color: rgb(52, 142, 244);
+      border: none;
+      border-radius: 3px;
+      margin: 10px;
+      color: white;
+      padding: 10px;
+    }
+    .prf-pics {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      top: 79px;
+      bottom: 0;
+      left: 0;
+      background-color: rgb(233, 229, 229);
+      padding-top: 10px;
+    }
+    .informations {
+      position: fixed;
+      top: 81px;
+      left: 80px;
+      bottom: 0px;
+      width: 180px;
+      background-color: grey;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 20px;
+    }
+    .info {
+      display: flex;
+      width: 150px;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100px;
+    }
+  </style>
+
+  <body>
+    <div class="header">
+      <div class="left-item">
+        <img alt="buddy" class="bimarsha" src="/image exercises/bimarsha.JPG" />
+        <p style="color: black">Vimarsha buddy</p>
+      </div>
+      <div class="right-item">
+        <button>Add friend</button>
+        <button>Message</button>
+      </div>
+    </div>
+    <div class="prf-pics">
+      <img alt="buddy" class="bimarsha" src="/image exercises/bimarsha.JPG" />
+      <img alt="buddy" class="bimarsha" src="/image exercises/IMG_2421.JPG" />
+      <img alt="buddy" class="bimarsha" src="/image exercises/IMG_3040.JPG" />
+    </div>
+    <div class="informations">
+      <div class="info">
+        <p>Info</p>
+        <p>+</p>
+      </div>
+      <div class="content">
+        <p># new-videos</p>
+        <p># updates</p>
+        <p># faq</p>
+      </div>
+    </div>
+  </body>
+</html>

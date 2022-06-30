@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>nested flexbox-twitter</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
+    }
+    .box-container {
+      margin-top: 10px;
+      margin-left: 10px;
+      height: 220px;
+      width: 450px;
+      border: 1px solid;
+      border-radius: 2px;
+      display: flex;
+    }
+    .image {
+      height: 250px;
+      width: 90px;
+    }
+    .bimarsha {
+      height: 70px;
+      width: 70px;
+      border-radius: 35px;
+      object-fit: cover;
+      margin-top: 7px;
+      margin-left: 5px;
+      margin-right: 10px;
+    }
+    .info-creator {
+      display: flex;
+      flex-direction: column;
+    }
+    .creator {
+      margin-top: 5px;
+    }
+    .creator-id {
+      color: rgb(35, 207, 207);
+      font-weight: 100;
+    }
+    .youtube {
+      border: 1px solid grey;
+      background-color: gray;
+      margin-top: 15px;
+      height: 120px;
+      width: 340px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+    }
+    .empty {
+      width: 100px;
+      margin-right: 5px;
+      border-radius: 10px;
+    }
+    .youtube-content {
+      flex: 1;
+      background-color: white;
+      height: 160px;
+    }
+  </style>
+  <body>
+    <div class="box-container">
+      <div class="image">
+        <img class="bimarsha" src="/image exercises/bimarsha.JPG" />
+      </div>
+      <div class="info-creator">
+        <h4 class="creator">
+          vimarsha_buddy <span class="creator-id"> @Vimarsha.buddy</span>
+        </h4>
+        <p>
+          What is backend web development? A complete overview.New video is up!
+        </p>
+        <div class="youtube">
+          <div class="empty"></div>
+          <div class="youtube-content">
+            <p style="margin-top: 30px; margin-left: 5px">Youtube.com</p>
+            <p style="margin-top: 5px; margin-left: 5px; inline-height: 2px">
+              Backend web development-a complete overview(2021)
+            </p>
+          </div>
+
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

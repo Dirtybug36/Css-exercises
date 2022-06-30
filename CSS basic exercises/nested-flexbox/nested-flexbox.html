@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>nested flexbox</title>
+  </head>
+  <body>
+    <div style="display: flex; flex-direction: row">
+      <div style="background-color: pink; width: 100px; height: 100px">
+        item 1
+      </div>
+      <div
+        style="
+          background-color: lightblue;
+          flex: 1;
+          height: 100px;
+          justify-content: center;
+        "
+      >
+        <div
+          style="
+            background-color: purple;
+            width: 40px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+          "
+        >
+          row1
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          "
+        >
+          <div style="background-color: purple; width: 40px">row2</div>
+          <div style="background-color: purple; width: 40px">row2</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

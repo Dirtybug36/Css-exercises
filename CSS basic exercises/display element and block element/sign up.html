@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>sign-up</title>
+<style>
+    .first,
+    .last {
+        width: 80px;
+        padding: 5px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: rgb(165, 160, 160);
+
+    }
+
+    .email {
+        display: block;
+        width: 175px;
+        margin-bottom: 5px;
+        padding: 5px;
+        border-color: rgb(165, 160, 160);
+        border-width: 1px;
+        border-radius: 5px;
+    }
+
+    button.sign-up {
+        width: 190px;
+        color: white;
+        font-weight: bold;
+        background-color: rgb(29, 155, 240);
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        padding: 8px;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+
+    p.uber {
+        margin: 20px;
+        display: block;
+        font-size: 50px;
+        text-align: start;
+    }
+
+    .uber-location,
+    .uber-destination {
+        width: 400px;
+        display: block;
+        padding: 5px;
+        margin-bottom: 5px;
+        background-color: rgb(247, 240, 240);
+        border-width: 1px;
+        border-radius: 3px;
+        margin-left: 20px;
+    }
+
+    button.Request {
+        color: white;
+        background-color: black;
+        padding: 10px 12px;
+        margin: 5px;
+        border-width: 1px;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
+    button.Schedule {
+        color: black;
+        background-color: rgb(244, 235, 235);
+        padding: 10px 12px;
+        margin: 5px;
+        border-width: 1px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <input class="first" type="text" placeholder="First name">
+    <input class="last" type="text" placeholder="Last name">
+    <input class="email" type="text" placeholder="Email">
+    <button class="sign-up">Sign up</button>
+
+    <p class="uber">Request a ride now</p>
+    <input class="uber-location" type="text" placeholder="Enter pickup location">
+    <input class="uber-destination" type="text" placeholder="Enter destination">
+    <button class="Request" type="button">Request now</button>
+    <button class="Schedule">Schedule for later</button>
+
+</body>
+
+</html>

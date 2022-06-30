@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>nested flexbox-gmail</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      padding-top: 20px;
+    }
+
+    .Gmail {
+      font-family: Arial, Helvetica, sans-serif;
+      border: 1px solid grey;
+      box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+      margin: 0;
+      padding: 0;
+      width: 450px;
+      height: 350px;
+      margin-left: 20px;
+    }
+    .inbox {
+      color: rgb(142, 142, 142);
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .prf-pic {
+      margin-top: 5px;
+      margin-left: 5px;
+      margin-right: 20px;
+    }
+    .name {
+      height: 70px;
+      width: 70px;
+      border-radius: 35px;
+      object-fit: cover;
+    }
+    .topic {
+      width: 100%;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+    }
+    .time {
+      margin-right: 10px;
+    }
+    .h4 {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .time {
+      color: rgb(193, 190, 190);
+    }
+    .paragraph {
+      color: grey;
+      font-style: italic;
+    }
+  </style>
+  <body>
+    <div class="Gmail">
+      <div><p class="inbox">All INBOXES</p></div>
+      <div class="content">
+        <div class="prf-pic">
+          <img class="name" src="/image exercises/bimarsha.JPG" />
+        </div>
+        <div class="topic">
+          <div class="header">
+            <h2>Chewy Promotion</h2>
+            <p class="time">4:58pm</p>
+          </div>
+          <div class="h4">
+            <h4>Biggest sales of the year!</h4>
+          </div>
+          <div>
+            <p class="paragraph">
+              Hey there! We're writing to tell you about our...
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="prf-pic">
+          <img class="name" src="/image exercises/IMG_2421.JPG" />
+        </div>
+        <div class="topic">
+          <div class="header">
+            <h2>Best Buy</h2>
+            <p class="time">11:58pm</p>
+          </div>
+          <div class="h4">
+            <h4>Your Best Buy eReceipt</h4>
+          </div>
+          <div>
+            <p class="paragraph">Thank you for shopping at Best Buy,here is</p>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="prf-pic">
+          <img class="name" src="/image exercises/IMG_3040.JPG" />
+        </div>
+        <div class="topic">
+          <div class="header">
+            <h2>Netflix</h2>
+            <p class="time">1:21am</p>
+          </div>
+          <div class="h4">
+            <h4>Here's what's coming soon to Netflix</h4>
+          </div>
+          <div>
+            <p class="paragraph">Brand new movies and shows,old favourites..</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>profiles</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: roboto, arial;
+    }
+    body {
+      background-color: black;
+    }
+    .layout {
+      background-color: white;
+      margin-top: 150px;
+    }
+    .prf-person {
+      padding: 10px;
+    }
+    .prf {
+      display: inline-block;
+    }
+    .name {
+      font-weight: bold;
+      font-size: large;
+      margin-bottom: 4px;
+    }
+     {
+      color: grey;
+    }
+
+    .photo {
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      margin-right: 7px;
+      object-fit: cover;
+    }
+    .prf-info {
+      display: inline-block;
+    }
+    .button {
+      display: inline-block;
+      float: right;
+      margin-right: 25px;
+    }
+    .select {
+      color: white;
+      font-weight: bold;
+      width: 100px;
+      background-color: rgb(29, 155, 240);
+      text-align: center;
+      border-radius: 4px;
+      border: none;
+      padding: 8px;
+      cursor: pointer;
+      margin: 5px;
+      box-shadow: 5px, 5px, 10px, rgb(0, 0, 240);
+    }
+    .select:hover {
+      transition: 0.15s;
+      background-color: rgb(58, 158, 225, 0.5);
+    }
+    .nickname,
+    .mutual {
+      color: grey;
+      font-size: medium;
+    }
+     {
+    }
+  </style>
+  <body>
+    <div class="layout">
+      <div class="prf-person">
+        <div class="prf">
+          <img class="photo" src="/image exercises/bimarsha.JPG" />
+        </div>
+
+        <div class="prf-info">
+          <p class="name">Bimarsha</p>
+          <p class="nickname">buddy</p>
+          <p class="mutual">7 mutual friend</p>
+        </div>
+
+        <div class="button"><button class="select">Follow</button></div>
+      </div>
+
+      <div class="prf-person">
+        <div class="prf">
+          <img class="photo" src="/image exercises/IMG_3040.JPG" />
+        </div>
+        <div class="prf-info">
+          <p class="name">Milan</p>
+          <p class="nickname">Kaaley</p>
+          <p class="mutual">2 mutual friend</p>
+        </div>
+        <div class="button">
+          <button class="select">Follow</button>
+        </div>
+      </div>
+      <div class="prf-person">
+        <div class="prf">
+          <img class="photo" src="/image exercises/IMG_2421.JPG" />
+        </div>
+        <div class="prf-info">
+          <p class="name">Bibek</p>
+          <p class="nickname">Becoops</p>
+          <p class="mutual">5 mutual friend</p>
+        </div>
+        <div class="button">
+          <button class="select">Follow</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
